@@ -1,0 +1,64 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var cities = new List<SelectListItem>
+    {
+            new SelectListItem{Text="Hyderabad",Value="HYD"},
+            new SelectListItem{Text="Chennai",Value="CHE"},
+            new SelectListItem{Text="Bangalore",Value="BNG"}
+    };
+}
+
+<h3> working with HTML helpers</h3>
+
+@using(Html.BeginForm())
+{
+    <table class="table">
+        <tr>
+            <td>Ecode:</td>
+            <td>
+                @Html.TextBox("Ecode")
+            </td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>
+                @Html.Password("Password").
+            </td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>
+                @Html.RadioButton("Gender","M")Male
+                @Html.RadioButton("Gender","F")Female
+            </td>
+        </tr>
+        <tr>
+            <td>Hobbies:</td>
+            <td>
+                @Html.CheckBox("hobbies",htmlAttributes:new {@value="singing"}) Singing
+                @Html.CheckBox("hobbies", htmlAttributes: new { @value = "Gaming" }) Gaming
+                @Html.CheckBox("hobbies", htmlAttributes: new { @value = "Drawing" }) Drawing
+
+
+            </td>
+        </tr>
+        <tr>
+            <td>Select City:</td>
+            <td>
+                @Html.DropDownList("city",cities)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" name="Submit" class="btn btn-warning"/>
+            </td>
+            <td>
+            
+            </td>
+        </tr>
+            
+    </table>
+    
+}

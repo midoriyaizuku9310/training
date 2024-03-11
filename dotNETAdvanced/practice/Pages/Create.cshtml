@@ -1,0 +1,41 @@
+﻿@page
+@model practice.Pages.CreateModel
+@{
+}
+
+
+<form method="post">
+    <table>
+        <tr>
+            <td><label asp-for="book.bname"></label></td>
+           
+            <td><input asp-for="book.bname" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="book.bid"></label></td>
+            <td><input asp-for="book.bid" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="book.bauthor"></label></td>
+            <td><input asp-for="book.bauthor" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="book.pname"></label></td>
+            <td><input asp-for="book.pname" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="book.copies"></label></td>
+            <td><input asp-for="book.copies" /></td>
+         </tr>
+        <tr>
+            <td><label asp-for="book.price"></label></td>
+            <td><input asp-for="book.price" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Create" />
+            </td>
+        </tr>
+    </table>
+</form>

@@ -1,0 +1,20 @@
+﻿
+@Model DataAccess.Employee
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<tr>
+    <td>@Model.Ecode</td>
+    <td>@Model.Ename</td>
+    <td>@Model.salary</td>
+    <td>@Model.deptid</td>
+    <td>
+        <a asp-page="./Edit" asp-route-itemid="@Model.Ecode">Edit</a>
+        <button type="submit">Delete</button>
+    </td>
+</tr>

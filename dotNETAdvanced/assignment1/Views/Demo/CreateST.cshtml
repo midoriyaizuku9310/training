@@ -1,0 +1,44 @@
+﻿@model assignment1.Models.DataDisplay;
+@{
+    ViewData["Title"] = "CreateST";
+}
+
+<h1>CreateST</h1>
+
+@using(Html.BeginForm())
+{
+    <table>
+        <tr>
+            <td>@Html.DisplayNameFor(modelItem=>modelItem.ecode)</td>
+            <td>@Html.TextBoxFor(modelItem=>modelItem.ecode)</td>
+        </tr>
+        <tr>
+            <td>@Html.DisplayNameFor(modelItem => modelItem.password)</td>
+            <td>@Html.PasswordFor(modelItem => modelItem.password)</td>
+        </tr>
+       @*  <tr>
+            <td>@Html.DisplayNameFor(modelItem => modelItem.gender)</td>
+            <td>
+                @foreach (var g in Model.genders)
+                {
+                    Html.RadioButtonFor(modelItem => modelItem.gender, g);
+
+                }
+            </td> 
+        </tr>*@
+
+        <tr>
+            <td>
+                @Html.DisplayNameFor(modelItem=>modelItem.city)
+            </td>
+            <td>
+                @Html.DropDownListFor(modelItem=>modelItem.city,Model.cities)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit"/>
+            </td>
+        </tr>
+    </table>
+}

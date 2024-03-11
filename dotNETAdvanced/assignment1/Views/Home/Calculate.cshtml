@@ -1,0 +1,31 @@
+﻿@model assignment1.Models.Rent
+
+@{
+    ViewData["Title"] = "Calculate";
+}
+
+<h1>Rent Calculation</h1>
+
+<div>
+    
+    <hr />
+    <dl class="row">
+        
+        <dd >
+            <h2>@Html.DisplayFor(model => model.Name)</h2>
+        </dd>
+        <div class="col-sm-12">
+            <p1>Hall Owner: @Model.HO</p1>
+        </div>
+       <div class="col-sm-12">
+           <p1>Cost Per Day: @Model.cost</p1>
+       </div>
+        <div class="col-sm-12">
+            <p1>Renting from @Model.sd to @Model.ed</p1>
+        </div>
+        <div class="col-sm-12">
+            <p1>total cost: @Model.totalCost </p1>
+        </div>
+    </dl>
+</div>
+

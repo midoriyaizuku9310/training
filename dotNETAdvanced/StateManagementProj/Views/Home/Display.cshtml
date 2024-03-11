@@ -1,0 +1,17 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    //var accnum = (int)ViewData["accnum"];
+    TempData.Keep();
+}
+<h2>this is display</h2>
+<p>X=@TempData["x"].ToString()</p>
+
+
+@using (Html.BeginForm("InfoPage","Home"))
+{
+
+    @* @Html.Hidden("accnum",accnum) *@
+    <input type="submit"/>
+}

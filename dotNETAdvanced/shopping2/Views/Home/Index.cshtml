@@ -1,0 +1,11 @@
+﻿@model List<shopping2.Model.Product>
+
+@foreach (var item in Model)
+{
+    byte[] imageData = item.Image;
+    string imageBase64 = Convert.ToBase64String(imageData);
+    string imageUrl = $"data:image/png;base64,{imageBase64}";
+
+    <h3>Id: @item.Id</h3>
+    <img src="@imageUrl" alt="Image" />
+}

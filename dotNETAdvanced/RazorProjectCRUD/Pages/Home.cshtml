@@ -1,0 +1,40 @@
+﻿@page
+@model RazorProjectCRUD.Pages.HomeModel
+@{
+}
+
+<h1>Employee Data</h1>
+<a asp-page-handler="Logout">Logout</a>
+<form method="post">
+<table border="1" width= 60%>
+    <thead>
+        <tr>
+            <th>Eid</th>
+            <th>Ename</th>
+            <th>Salary</th>
+            <th>DeptId</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model.Emps)
+        @* {
+            <tr>
+                <td>@item.Ecode</td>
+                <td>@item.Ename</td>
+                <td>@item.salary</td>
+                <td>@item.deptid</td>
+                <td>
+                    <a asp-page="./Edit" asp-route-itemid="@item.Ecode">Edit</a>
+                    <button type ="submit">Delete</button>
+                </td>
+            </tr> *@
+           {
+                <partial name="_EmployeeItem" model="@item" />
+        }
+    </tbody>
+</table>
+</form>
+
+
+<img src="/images/OIP.jpg" width="300" height="350"/>

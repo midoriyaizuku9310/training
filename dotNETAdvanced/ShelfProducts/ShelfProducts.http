@@ -1,0 +1,6 @@
+@ShelfProducts_HostAddress = http://localhost:5122
+
+GET {{ShelfProducts_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

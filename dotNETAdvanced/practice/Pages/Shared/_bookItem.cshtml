@@ -1,0 +1,17 @@
+﻿@Model Model.boookStore
+
+@{
+   
+}
+
+<tr>
+    <td>@Model.bname</td>
+    <td>@Model.bid</td>
+    <td>@Model.bauthor</td>
+    <td>@Model.pname</td>
+    <td>@Model.copies</td>
+    <td>@Model.price</td>
+    <td>
+        <a asp-page="./update" asp-route-itemid="@Model.bid">Update</a>
+    </td>
+</tr>

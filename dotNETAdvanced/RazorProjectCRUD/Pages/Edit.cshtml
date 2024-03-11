@@ -1,0 +1,33 @@
+﻿@page "{id:int}"
+@model RazorProjectCRUD.Pages.EditModel
+@{
+}
+
+<h1>Edit Employee</h1>
+
+<form method="post">
+    <table>
+        <tr>
+            <td><label asp-for="emp.Ecode"></label></td>
+            <td><input asp-for="emp.Ecode" readonly /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="emp.Ename"></label></td>
+            <td><input asp-for="emp.Ename" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="emp.salary"></label></td>
+            <td><input asp-for="emp.salary" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="emp.deptid"></label></td>
+            <td><input asp-for="emp.deptid" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Save" />
+            </td>
+        </tr>
+    </table>
+</form>

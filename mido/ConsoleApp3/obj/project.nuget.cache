@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "bK8EpcfEeuDMClNOpva51Y9CuP5cQE9wrXYJwWaNdvhcs2qSZUQ155OmhuoToxWrRWOK+Bu2nx8YSeqmhNu+Cw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mdanish\\source\\repos\\mido\\ConsoleApp3\\ConsoleApp3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mdanish\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\mdanish\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\mdanish\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\mdanish\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
+  ],
+  "logs": []
+}

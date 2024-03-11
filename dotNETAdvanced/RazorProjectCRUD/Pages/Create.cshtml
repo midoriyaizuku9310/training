@@ -1,0 +1,33 @@
+﻿@page
+@model RazorProjectCRUD.Pages.CreateModel
+@{
+}
+
+<h1>Add Employee</h1>
+
+<form method="post">
+    <table>
+        <tr>
+            <td><label asp-for="emp.Ecode"></label></td>
+            <td><input asp-for="emp.Ecode" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="emp.Ename"></label></td>
+            <td><input asp-for="emp.Ename" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="emp.salary"></label></td>
+            <td><input asp-for="emp.salary" /></td>
+        </tr>
+        <tr>
+            <td><label asp-for="emp.deptid"></label></td>
+            <td><input asp-for="emp.deptid"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Create" />
+            </td>
+        </tr>
+    </table>
+</form>

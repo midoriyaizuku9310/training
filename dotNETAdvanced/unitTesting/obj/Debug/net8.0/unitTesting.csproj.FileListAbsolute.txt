@@ -1,0 +1,14 @@
+C:\Users\mdanish\source\repos\dotNETAdvanced\unitTesting\bin\Debug\net8.0\unitTesting.exe
+C:\Users\mdanish\source\repos\dotNETAdvanced\unitTesting\bin\Debug\net8.0\unitTesting.deps.json
+C:\Users\mdanish\source\repos\dotNETAdvanced\unitTesting\bin\Debug\net8.0\unitTesting.runtimeconfig.json
+C:\Users\mdanish\source\repos\dotNETAdvanced\unitTesting\bin\Debug\net8.0\unitTesting.dll
+C:\Users\mdanish\source\repos\dotNETAdvanced\unitTesting\bin\Debug\net8.0\unitTesting.pdb
+C:\Users\mdanish\source\repos\dotNETAdvanced\unitTesting\obj\Debug\net8.0\unitTesting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mdanish\source\repos\dotNETAdvanced\unitTesting\obj\Debug\net8.0\unitTesting.AssemblyInfoInputs.cache
+C:\Users\mdanish\source\repos\dotNETAdvanced\unitTesting\obj\Debug\net8.0\unitTesting.AssemblyInfo.cs
+C:\Users\mdanish\source\repos\dotNETAdvanced\unitTesting\obj\Debug\net8.0\unitTesting.csproj.CoreCompileInputs.cache
+C:\Users\mdanish\source\repos\dotNETAdvanced\unitTesting\obj\Debug\net8.0\unitTesting.dll
+C:\Users\mdanish\source\repos\dotNETAdvanced\unitTesting\obj\Debug\net8.0\refint\unitTesting.dll
+C:\Users\mdanish\source\repos\dotNETAdvanced\unitTesting\obj\Debug\net8.0\unitTesting.pdb
+C:\Users\mdanish\source\repos\dotNETAdvanced\unitTesting\obj\Debug\net8.0\unitTesting.genruntimeconfig.cache
+C:\Users\mdanish\source\repos\dotNETAdvanced\unitTesting\obj\Debug\net8.0\ref\unitTesting.dll

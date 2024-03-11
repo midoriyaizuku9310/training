@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    TempData.Keep();
+}
+<p>Title:@ViewBag.temp</p>
+<p>X=@TempData["x"].ToString()</p>
+
+@using (Html.BeginForm("Display","Home"))
+{
+    <label>Enter your account number:</label>
+    @Html.TextBox("accnum")
+    <br/>
+    <input type="submit"/>
+}

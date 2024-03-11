@@ -1,0 +1,14 @@
+C:\Users\mdanish\source\repos\ConsoleApp02\ConsoleApp02\obj\Debug\net8.0\ConsoleApp02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mdanish\source\repos\ConsoleApp02\ConsoleApp02\obj\Debug\net8.0\ConsoleApp02.AssemblyInfoInputs.cache
+C:\Users\mdanish\source\repos\ConsoleApp02\ConsoleApp02\obj\Debug\net8.0\ConsoleApp02.AssemblyInfo.cs
+C:\Users\mdanish\source\repos\ConsoleApp02\ConsoleApp02\obj\Debug\net8.0\ConsoleApp02.csproj.CoreCompileInputs.cache
+C:\Users\mdanish\source\repos\ConsoleApp02\ConsoleApp02\bin\Debug\net8.0\ConsoleApp02.exe
+C:\Users\mdanish\source\repos\ConsoleApp02\ConsoleApp02\bin\Debug\net8.0\ConsoleApp02.deps.json
+C:\Users\mdanish\source\repos\ConsoleApp02\ConsoleApp02\bin\Debug\net8.0\ConsoleApp02.runtimeconfig.json
+C:\Users\mdanish\source\repos\ConsoleApp02\ConsoleApp02\bin\Debug\net8.0\ConsoleApp02.dll
+C:\Users\mdanish\source\repos\ConsoleApp02\ConsoleApp02\bin\Debug\net8.0\ConsoleApp02.pdb
+C:\Users\mdanish\source\repos\ConsoleApp02\ConsoleApp02\obj\Debug\net8.0\ConsoleApp02.dll
+C:\Users\mdanish\source\repos\ConsoleApp02\ConsoleApp02\obj\Debug\net8.0\refint\ConsoleApp02.dll
+C:\Users\mdanish\source\repos\ConsoleApp02\ConsoleApp02\obj\Debug\net8.0\ConsoleApp02.pdb
+C:\Users\mdanish\source\repos\ConsoleApp02\ConsoleApp02\obj\Debug\net8.0\ConsoleApp02.genruntimeconfig.cache
+C:\Users\mdanish\source\repos\ConsoleApp02\ConsoleApp02\obj\Debug\net8.0\ref\ConsoleApp02.dll

@@ -1,0 +1,25 @@
+﻿@page
+@model HelloWorldRazor.Pages.newhomeModel
+@{
+}
+
+<h1>this is mido's home</h1>
+<h2>@Model.Message</h2>
+
+<table border="1" width="60%">
+   
+    <thead>
+        <tr>
+            <th>Ecode</th>
+            <th>Ename</th>
+            <th>Salary</th>
+            <th>Deptid</th>
+        </tr>
+        <tr>
+            <td>@Model.Employee.Ecode</td>
+            <td>@Model.Employee.EName</td>
+            <td>@Model.Employee.Salary</td>
+            <td>@Model.Employee.Deptid</td>
+        </tr>
+    </thead>
+</table>

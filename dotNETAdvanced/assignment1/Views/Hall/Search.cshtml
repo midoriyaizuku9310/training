@@ -1,0 +1,60 @@
+﻿@model IEnumerable<assignment1.Models.Hall>
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+<h1>Search</h1>
+
+@if(Model.Any()){
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.hallName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ownerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.costPerDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.mobile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.address)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.hallName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ownerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.costPerDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.mobile)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.address)
+            </td>
+            
+        </tr>
+}
+    </tbody>
+    </table>
+}
+else
+{
+    <h1>No halls found</h1>
+}

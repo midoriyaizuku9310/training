@@ -1,0 +1,11 @@
+C:\Users\mdanish\source\repos\midoLibrary\midoLibrary\bin\Debug\net8.0\midoLibrary.deps.json
+C:\Users\mdanish\source\repos\midoLibrary\midoLibrary\bin\Debug\net8.0\midoLibrary.dll
+C:\Users\mdanish\source\repos\midoLibrary\midoLibrary\bin\Debug\net8.0\midoLibrary.pdb
+C:\Users\mdanish\source\repos\midoLibrary\midoLibrary\obj\Debug\net8.0\midoLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mdanish\source\repos\midoLibrary\midoLibrary\obj\Debug\net8.0\midoLibrary.AssemblyInfoInputs.cache
+C:\Users\mdanish\source\repos\midoLibrary\midoLibrary\obj\Debug\net8.0\midoLibrary.AssemblyInfo.cs
+C:\Users\mdanish\source\repos\midoLibrary\midoLibrary\obj\Debug\net8.0\midoLibrary.csproj.CoreCompileInputs.cache
+C:\Users\mdanish\source\repos\midoLibrary\midoLibrary\obj\Debug\net8.0\midoLibrary.dll
+C:\Users\mdanish\source\repos\midoLibrary\midoLibrary\obj\Debug\net8.0\refint\midoLibrary.dll
+C:\Users\mdanish\source\repos\midoLibrary\midoLibrary\obj\Debug\net8.0\midoLibrary.pdb
+C:\Users\mdanish\source\repos\midoLibrary\midoLibrary\obj\Debug\net8.0\ref\midoLibrary.dll

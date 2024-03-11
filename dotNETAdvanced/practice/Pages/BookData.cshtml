@@ -1,0 +1,47 @@
+﻿@page
+@model practice.Pages.BookDataModel
+@{
+    <h1>Book Store</h1>
+    
+}
+    
+<form method="post">
+    <table border="1" width="60%">
+        <thead>
+            <tr>
+                <th>Book</th>
+                <th>Book Id</th>
+                <th>Author</th>
+                <th>Publisher</th>
+                <th>Left</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model.books)
+            {
+                <tr>
+                <td>@item.bname</td>
+                <td>@item.bid</td>
+                <td>@item.bauthor</td>
+                <td>@item.pname</td>
+                <td>@item.copies</td>
+                <td>@item.price</td>
+                    <td>
+                        <a asp-page="./Update" asp-route-itemid="@item.bid">Update</a>
+                    </td>
+                </tr>
+               
+               
+            }
+            
+        </tbody>
+        
+    </table>
+
+    <a asp-page="./Create">Add Data</a>
+    <button type="submit" value="Return To Home">Return To Home</button>
+    
+
+</form>
+
