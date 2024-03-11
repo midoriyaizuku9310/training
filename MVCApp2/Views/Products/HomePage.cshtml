@@ -1,0 +1,83 @@
+﻿@model List<String>
+@{
+
+    var sessionVariable = Context.Session.GetString("Username");
+}
+
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/60107f25c4e460d97bb8aec2_6002086f72b727312201e451_ecommerce-website-design-examples.jpeg'); /* Replace 'background_image.jpg' with your actual background image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="container">
+        @if (Context.Session.GetString("Username") != null)
+        {
+
+            <h1>Welcome to Cart Savvy @sessionVariable !!</h1>
+            <p>Your ultimate shopping companion for a seamless experience!</p>
+        }
+
+
+        else
+        {
+
+
+            <h1>Welcome to Cart Savvy</h1>
+            <p>Your ultimate shopping companion for a seamless experience!</p>
+        }
+    </div>
+</body>
+
+@* <h1> List of Categories</h1> *@
+
+
+<div class="d-flex flex-wrap justify-content-between">
+    @foreach (var item in Model)
+    {
+        //string imagePr = Convert.ToBase64String(item.Image);
+
+        <div style="width: 300px;margin-bottom: 20px;padding: 10px;border: 1px solid #ccc;
+                    border-radius: 5px;">
+           
+                @* <img src="data:image/jpeg;base64,@imagePr" alt="My image" width="200px" height="200px" /> *@
+                <h3>@item</h3>
+                @* <p class="lead fw-bold">Rating : @item.Rating</p> *@
+                @* <p class="lead fw-bold">Price : @item.Price</p> *@
+                @* <input type="submit" class="w-100 btn btn-dark" value="View SubCategories" /> *@
+            <a asp-action="SubCategory" asp-route-CategoryName="@item" class="w-100 btn btn-dark">View Subcategories</a>
+
+        </div>
+    }
+</div>

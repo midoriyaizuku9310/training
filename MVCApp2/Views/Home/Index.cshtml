@@ -1,0 +1,32 @@
+﻿@* @* @model MVCApp2.Models.HallDetails
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<h2>Rent Calculation</h2>
+@using (Html.BeginForm("Calculate", "Home", FormMethod.Post))
+{
+    <div>
+        <label>Name</label>
+        @Html.TextBoxFor(model => model.Name)
+    </div>
+    <div>
+        <label>Hall Owner</label>
+        @Html.TextBoxFor(model => model.Hall_owner)
+    </div>
+    <div>
+        <label>Cost per day</label>
+        @Html.TextBoxFor(model => model.Cost_per_day)
+    </div>
+    <div>
+        <label>Start date</label>
+        @* @Html.TextBoxFor(model => model.Start_date,"{0:dd-MM-yyyy}") *@
+        @* <input type="date" name="Start_date" />
+    </div>
+    <div>
+        <label>End date</label>
+        @* @Html.TextBoxFor(model => model.End_date) *@
+        @* <input type="date" name="End_date" />
+    </div>
+    <input type="Submit" value="Calculate" /> *@

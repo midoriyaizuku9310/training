@@ -1,0 +1,86 @@
+﻿@model MVCApp2.Models.Product
+
+@{
+    ViewData["Title"] = "ProductDetails";
+}
+
+
+<h1>Details</h1>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    @* <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CategoryId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CategoryId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CategoryName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SubCategoryId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SubCategoryId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SubCategoryName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SubCategoryName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ProductId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProductId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Rating)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Rating)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+    </dl> *@
+    <div class="d-flex flex-wrap justify-content-center align-items-center" >
+        @{
+            string imagePr = Convert.ToBase64String(Model.Image);
+           }
+
+        <div style="width: 300px;margin-bottom: 20px;padding: 10px;border: 1px solid #ccc;
+                    border-radius: 5px; ">
+            <form asp-action="addToCart" asp-route-id="@Model.Id" asp-route-id1 = "username">
+                <img src="data:image/jpeg;base64,@imagePr" alt="My image" width="200px" height="200px" />
+                <h3>@Model.ProductName</h3>
+                <p class="lead fw-bold">Rating : @Model.Rating</p>
+                <p class="lead fw-bold">Price : @Model.Price</p>
+                <input type="submit" class="w-100 btn btn-dark" value="Add To Cart"/>
+            </form>
+        </div>
+    </div>
+</div>
+

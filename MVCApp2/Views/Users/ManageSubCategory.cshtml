@@ -1,0 +1,27 @@
+﻿@model List<String>
+
+
+<a asp-action="Products1" asp-route-CategoryName="@ViewBag.CategoryName">Add New SubCategory</a>
+
+
+<h1> List of SubCategories</h1>
+
+
+<div class="d-flex flex-wrap justify-content-between">
+    @foreach (var item in Model)
+    {
+        //string imagePr = Convert.ToBase64String(item.Image);
+
+        <div style="width: 300px;margin-bottom: 20px;padding: 10px;border: 1px solid #ccc;
+                    border-radius: 5px;">
+
+            @* <img src="data:image/jpeg;base64,@imagePr" alt="My image" width="200px" height="200px" /> *@
+            <h3>@item</h3>
+            @* <p class="lead fw-bold">Rating : @item.Rating</p> *@
+            @* <p class="lead fw-bold">Price : @item.Price</p> *@
+            @* <input type="submit" class="w-100 btn btn-dark" value="View SubCategories" /> *@
+            <a asp-action="ManageProduct" asp-route-SubCategoryName="@item" class="w-100 btn btn-dark my-2">View Products</a>
+            <a asp-action="DeleteSubCategory" asp-route-SubCategoryName="@item" class="w-100 btn btn-dark my-2">Delete SubCategory</a>
+        </div>
+    }
+</div>

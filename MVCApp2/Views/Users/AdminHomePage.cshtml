@@ -1,0 +1,25 @@
+﻿
+<h1>Admin Homepage</h1>
+
+
+<div class="d-flex flex-wrap justify-content-between">
+    <div style="width: 300px;margin-bottom: 20px;padding: 10px;border: 1px solid #ccc;
+                border-radius: 5px;">
+        @* <img src="data:image/jpeg;base64,@imagePr" alt="My image" width="200px" height="200px" /> *@
+        <h3>Products</h3>
+        @* <p class="lead fw-bold">Rating : @item.Rating</p> *@
+        @* <p class="lead fw-bold">Price : @item.Price</p> *@
+        @* <input type="submit" class="w-100 btn btn-dark" value="View SubCategories" /> *@
+        <a asp-action="ManageCategories" class="w-100 btn btn-dark">Manage Products</a>
+    </div>
+
+    <div style="width: 300px;margin-bottom: 20px;padding: 10px;border: 1px solid #ccc;
+                border-radius: 5px;">
+        @* <img src="data:image/jpeg;base64,@imagePr" alt="My image" width="200px" height="200px" /> *@
+        <h3>Users</h3>
+        @* <p class="lead fw-bold">Rating : @item.Rating</p> *@
+        @* <p class="lead fw-bold">Price : @item.Price</p> *@
+        @* <input type="submit" class="w-100 btn btn-dark" value="View SubCategories" /> *@
+        <a asp-action="Index" class="w-100 btn btn-dark">Manage Users</a>
+    </div>
+</div>
